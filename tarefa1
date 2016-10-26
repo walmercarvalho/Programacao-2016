@@ -7,7 +7,7 @@
   scanf ("%f", &N2);
   scanf ("%f", &N3);
   N4 = rand()%11;
-  NF = (N1+N2+N3+N4)/2;
+  NF = (N1*2+N2*2+N3*3+N4*3)/10;
   if ( NF<6)
     printf ("Reprovado dependencia");
     else {
