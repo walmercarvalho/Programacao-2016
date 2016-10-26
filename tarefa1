@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+  float N1,N2,N3,N4,NF;
+  int main (void) {
+  printf ("Digite a nota do 1, 2, 3 bimestre respectivamente, vai apertando enter a cada nota");
+  scanf ("%f", &N1);
+  scanf ("%f", &N2);
+  scanf ("%f", &N3);
+  N4 = rand()%11;
+  NF = (N1+N2+N3+N4)/2;
+  if ( NF<6)
+    printf ("Reprovado dependencia");
+    else {
+    printf ("Aprovado");
+    }
+    return 0;
+    }
