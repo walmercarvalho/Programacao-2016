@@ -1,12 +1,10 @@
 #include <stdio.h>
-
 int main()
 {
    void tabuada(void);
    printf ("A Tabuada do 7 é :\n");
    printf ("--------------------\n");
    tabuada();
-
     return 0;
 }
 void tabuada(void)
@@ -19,6 +17,4 @@ void tabuada(void)
         printf("%d x 7 = %d\n",i,n[i]);
     }
      printf ("--------------------\n");
-
 }
-
