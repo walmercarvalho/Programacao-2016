@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+ float notas(float notamensal, float notabimestral, float conceito, int vezes);
+    float notam, notab, conceito;
+    int i;
+    for (i=0;i<4;i++)
+    {
+    printf ("Digite sua nota mensal do %d bimestre:\n",i+1);
+    scanf ("%f", &notam);
+    printf ("Digite sua nota bimestral do %d bimestre:\n",i+1);
+    scanf ("%f", &notab);
+    printf ("Digite seu conceito do %d bimestre:\n",i+1);
+    scanf ("%f", &conceito);
+    float notabi = notas(notam, notab, conceito, i);
+    printf ("Sua nota do %d bimestre é %f\n",i+1,notabi);
+    }
+    return 0;
+}
+float notas(float notamensal, float notabimestral, float conceito, int vezes) {
+    float notab[4];
+    notab[vezes] = (((notamensal + notabimestral)/2)*0.8) + conceito;
+    return notab[vezes];
+}
