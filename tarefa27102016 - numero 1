@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+   void tabuada(void);
+   printf ("A Tabuada do 7 é :\n");
+   printf ("--------------------\n");
+   tabuada();
+
+    return 0;
+}
+void tabuada(void)
+{
+    int i;
+    int n[10];
+    for (i=1;i<=10;i++)
+    {
+        n[i]= i * 7;
+        printf("%d x 7 = %d\n",i,n[i]);
+    }
+     printf ("--------------------\n");
+
+}
+
